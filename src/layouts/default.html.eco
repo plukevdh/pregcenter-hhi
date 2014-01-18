@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pregnancy Center and Clinic of the Low Country</title>
+  <%- @getBlock("styles").add(["/css/bootstrap.min.css", "/css/custom.css", "/css/colors.css", "/css/ext.css"]).toHTML() %>
+
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700&amp;subset=latin,cyrillic-ext,greek-ext,greek,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+  <div class="cont-header">
+    <div class="container">
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+
+          <div class="brand_logo">
+            <a href="index.html">Pregnancy Center and Clinic
+              <div class="sub">of the Low Country</div>
+            </a>
+          </div>
+
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+
+              <li class="dropdown">
+                <a title="">About</a>
+                <ul class="dropdown-menu">
+                  <li><a href="services.html" title="">Services</a></li>
+                  <li><a href="prenatal.html" title="">Prenatal Care</a></li>
+                  <li><a href="abortion.html" title="">Abortion</a></li>
+                  <li><a href="mobile.html" title="">Mobile Van</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a title="">Info</a>
+                <ul class="dropdown-menu">
+                  <li><a href="adoption.html" title="">Adoption</a></li>
+                  <li><a href="sti.html" title="">STI</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="cont-outer main">
+      <%- @content %>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner clearfix">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span4">
+            <h4>About the Center</h4>
+            The mission of Pregnancy Center and Clinic of the Low Country is to enable women in Beaufort and Jasper Counties to make responsible choices regarding reproductive health issues, accomplished by providing educational, emotional, financial and/or material support; options regarding adoption; and continuing support after the birth of the child.
+          </div>
+          <div class="span4">
+            <h4>Quick Links</h4>
+            <ul class="link-list">
+              <li><a href="services.html">Services</a></li>
+              <li><a href="directions.html">Directions</a></li>
+            </ul>
+          </div>
+          <div class="span4">
+            <h4>Contact Us</h4>
+            <div class="row-fluid">
+              <form class="form" action="index.html" method="get">
+                <div class="row-fluid">
+                  <div class="control-group span6">
+                    <input id="name" type="text" placeholder="Name" class="input-block-level">
+                  </div>
+                  <div class="control-group span6">
+                    <input id="email" type="text" placeholder="E-mail" class="input-block-level">
+                  </div>
+                </div>
+                <div class="row-fluid">
+                  <textarea rows="4" placeholder="Message" class="span12"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send!</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bot clearfix">
+      <div class="container">
+        <div class="copyright">
+          Copyright Pregnancy Center of The Low Country 2012
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <%- @getBlock("scripts").add(["/js/jquery.min.js", "/js/bootstrap.min.js"]).toHTML() %>
+
+</body>
+</html>
